@@ -5,6 +5,11 @@
 npm install
 ```
 
+### Para rodar a aplicação
+```
+npm run dev
+```
+
 ### Testes
 ```
 npm test
