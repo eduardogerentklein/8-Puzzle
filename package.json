@@ -1,5 +1,5 @@
 {
-  "name": "8Puzzle",
+  "name": "8-Puzzle",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,5 +13,9 @@
     "manhattan": "^1.0.0",
     "matrix-js": "^1.4.0",
     "table": "^5.4.6"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1"
   }
 }

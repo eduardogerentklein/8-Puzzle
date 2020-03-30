@@ -34,6 +34,7 @@ function findBlankPosition(matrix) {
     }
 }
 
+exports.findValuePosition = findValuePosition
 function findValuePosition(matrix, value) {
     for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 3; j++) {
@@ -62,6 +63,7 @@ const moveToRight = (matrix) => {
         return result()
     }
 }
+exports.moveToRight = moveToRight
 
 const moveToLeft = (matrix) => {
     let result = matrixjs(matrix)
@@ -81,6 +83,7 @@ const moveToLeft = (matrix) => {
         return result()
     }
 }
+exports.moveToLeft = moveToLeft
 
 const moveToUp = (matrix) => {
     let result = matrixjs(matrix)
