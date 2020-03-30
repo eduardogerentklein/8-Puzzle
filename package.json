@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "manhattan": "^1.0.0",
-    "matrix-js": "^1.4.0"
+    "matrix-js": "^1.4.0",
+    "table": "^5.4.6"
   }
 }
