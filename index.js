@@ -1,5 +1,6 @@
 const matrixjs = require('matrix-js')
 const manhattan = require('manhattan')
+const fs = require('fs');
 const { table, getBorderCharacters } = require('table')
 
 const consoleColor = {
@@ -7,7 +8,9 @@ const consoleColor = {
     yellow: '\x1b[33m%s\x1b[0m'
 }
 
-const initialState = [ [1, 2, 3], [0, 4, 6], [7, 5, 8] ];
+const gameConfig = JSON.parse(fs.readFileSync('yourLocalPath', 'utf8'))
+const initialState = JSON.parse(gameConfig.initialState)
+
 //const initialState = [ [0, 1, 3], [4, 2, 5], [7, 8, 6] ];
 //const initialState = [ [1, 2, 0], [4, 5, 3], [7, 8, 6] ];
 const finalState = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
