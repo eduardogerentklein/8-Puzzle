@@ -198,8 +198,13 @@ const showResult = (initial, result) => {
     console.log(consoleColor.yellow, table(initial, config))
     console.log()
     console.log('Passos:')
+    console.log()
 
-    result.map(move => console.log(consoleColor.cyan, table(move, config)))
+    result.map((move, index) => {
+        const geracao = index+1
+        console.log('Geração: ', geracao)
+        console.log(consoleColor.cyan, table(move, config))
+    })
 }
 
 const initialMovements = () => {
