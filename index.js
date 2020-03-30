@@ -103,6 +103,7 @@ const moveToUp = (matrix) => {
         return result()
     }
 }
+exports.moveToUp = moveToUp
 
 const moveToDown = (matrix) => {
     let result = matrixjs(matrix)
@@ -122,6 +123,7 @@ const moveToDown = (matrix) => {
         return result()
     }
 }
+exports.moveToDown = moveToDown
 
 function addMoves(moves) {
     if (movements.length === 0) {
