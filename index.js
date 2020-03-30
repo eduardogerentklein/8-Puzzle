@@ -8,7 +8,7 @@ const consoleColor = {
     yellow: '\x1b[33m%s\x1b[0m'
 }
 
-const gameConfig = JSON.parse(fs.readFileSync('yourLocalPath', 'utf8'))
+const gameConfig = JSON.parse(fs.readFileSync('config/gameConfig.json', 'utf8'))
 const initialState = JSON.parse(gameConfig.initialState)
 
 //const initialState = [ [0, 1, 3], [4, 2, 5], [7, 8, 6] ];
