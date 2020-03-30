@@ -14,11 +14,21 @@ describe('moveToRight', () => {
         expect(puzzle.moveToRight([ [1, 2, 3], [0, 4, 6], [7, 5, 8] ])).to.deep.equal([ [1, 2, 3], [4, 0, 6], [7, 5, 8] ])
         done()
     })
+    
+    it('Deve retornar null, pois não foi possível deslocar o valor 0 para x positivo.', (done) => {
+        expect(puzzle.moveToRight([ [1, 2, 0], [4, 5, 3], [7, 8, 6] ])).to.equal(null)
+        done()
+    })
 })
 
 describe('moveToLeft', () => {
     it('Deve retornar uma matriz onde o valor 0, desloca-se se possível para o valor x negativo.', (done) => {
-        expect(puzzle.moveToLeft([ [1, 2, 3], [0, 4, 6], [7, 5, 8] ])).to.deep.equal([ [1, 2, 3], [4, 0, 6], [7, 5, 8] ])
+        expect(puzzle.moveToLeft([ [1, 2, 0], [4, 5, 3], [7, 8, 6] ])).to.deep.equal([ [1, 0, 2], [4, 5, 3], [7, 8, 6] ])
+        done()
+    })
+
+    it('Deve retornar null, pois não foi possível deslocar o valor 0 para x negativo.', (done) => {
+        expect(puzzle.moveToLeft([ [1, 2, 3], [0, 4, 6], [7, 5, 8] ])).to.equal(null)
         done()
     })
 })
