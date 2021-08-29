@@ -1,21 +1,17 @@
 # 8 Puzzle
 
-### Instalação de Dependências
+### How to run
 ```
 npm install
-```
-
-### Para rodar a aplicação
-```
 npm run dev
 ```
 
-### Testes
+### How to test
 ```
 npm test
 ```
 
-## Algoritmos de busca informada
+## The Greedy Best-first Search (BFS) algorithm
 
 Algoritmos de pesquisa informada '*Best-first Search*' contém uma variedade de elementos por exemplo com a que distância estamos do objeto, o custo que irá levar o caminho, como chegar, como chegar ao nó do objeto entre outros elementos, o Algoritmo de pesquisa informada é muito útil para uma grande pesquisa pois utiliza a ideia de heurística.
 
